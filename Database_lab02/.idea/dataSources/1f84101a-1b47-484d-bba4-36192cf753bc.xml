@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="coffee">
+  <database-model serializer="dbm" dbms="DERBY" family-id="DERBY" format-version="4.14">
+    <root id="1">
+      <ServerVersion>10.14.1.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP"/>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <schema id="13" parent="1" name="SZYMON">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="14" parent="13" name="COFFEES"/>
+    <table id="15" parent="13" name="COFFEE_DESCRIPTIONS"/>
+    <table id="16" parent="13" name="COFFEE_HOUSES"/>
+    <table id="17" parent="13" name="COF_INVENTORY"/>
+    <table id="18" parent="13" name="DATA_REPOSITORY"/>
+    <table id="19" parent="13" name="MERCH_INVENTORY"/>
+    <table id="20" parent="13" name="RSS_FEEDS"/>
+    <table id="21" parent="13" name="SUPPLIERS"/>
+    <column id="22" parent="14" name="COF_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="14" name="SUP_ID">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="14" name="PRICE">
+      <Position>3</Position>
+      <DataType>NUMERIC(10,2)|2s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="14" name="SALES">
+      <Position>4</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="14" name="TOTAL">
+      <Position>5</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="27" parent="14" name="SQL191021190202630">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="28" parent="14" name="SQL191021190202631">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+    </index>
+    <key id="29" parent="14" name="SQL191021190202630">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="30" parent="14" name="SQL191021190202631">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+      <RefSchemaName>SZYMON</RefSchemaName>
+      <RefTableName>SUPPLIERS</RefTableName>
+      <RefKeyName>SQL191021190202580</RefKeyName>
+      <RefColNames>SUP_ID</RefColNames>
+    </foreign-key>
+    <column id="31" parent="15" name="COF_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="15" name="COF_DESC">
+      <Position>2</Position>
+      <DataType>CLOB|2005s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="33" parent="15" name="SQL191021190202700">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="34" parent="15" name="SQL191021190202701">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+    </index>
+    <key id="35" parent="15" name="SQL191021190202700">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="36" parent="15" name="SQL191021190202701">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+      <RefSchemaName>SZYMON</RefSchemaName>
+      <RefTableName>COFFEES</RefTableName>
+      <RefKeyName>SQL191021190202630</RefKeyName>
+      <RefColNames>COF_NAME</RefColNames>
+    </foreign-key>
+    <column id="37" parent="16" name="STORE_ID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="16" name="CITY">
+      <Position>2</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+    </column>
+    <column id="39" parent="16" name="COFFEE">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="16" name="MERCH">
+      <Position>4</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="16" name="TOTAL">
+      <Position>5</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="42" parent="16" name="SQL191021190202840">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>STORE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="43" parent="16" name="SQL191021190202840">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>STORE_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="44" parent="17" name="WAREHOUSE_ID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="17" name="COF_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="17" name="SUP_ID">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="17" name="QUAN">
+      <Position>4</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="17" name="DATE_VAL">
+      <Position>5</Position>
+      <DataType>TIMESTAMP|93s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="49" parent="17" name="SQL191021190202760">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+    </index>
+    <index id="50" parent="17" name="SQL191021190202761">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+    </index>
+    <foreign-key id="51" parent="17" name="SQL191021190202760">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COF_NAME</ColNames>
+      <RefSchemaName>SZYMON</RefSchemaName>
+      <RefTableName>COFFEES</RefTableName>
+      <RefKeyName>SQL191021190202630</RefKeyName>
+      <RefColNames>COF_NAME</RefColNames>
+    </foreign-key>
+    <foreign-key id="52" parent="17" name="SQL191021190202761">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+      <RefSchemaName>SZYMON</RefSchemaName>
+      <RefTableName>SUPPLIERS</RefTableName>
+      <RefKeyName>SQL191021190202580</RefKeyName>
+      <RefColNames>SUP_ID</RefColNames>
+    </foreign-key>
+    <column id="53" parent="18" name="DOCUMENT_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="54" parent="18" name="URL">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="55" parent="19" name="ITEM_ID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="19" name="ITEM_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="19" name="SUP_ID">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="19" name="QUAN">
+      <Position>4</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="19" name="DATE_VAL">
+      <Position>5</Position>
+      <DataType>TIMESTAMP|93s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="19" name="SQL191021190202810">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ITEM_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="61" parent="19" name="SQL191021190202811">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+    </index>
+    <key id="62" parent="19" name="SQL191021190202810">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ITEM_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="63" parent="19" name="SQL191021190202811">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+      <RefSchemaName>SZYMON</RefSchemaName>
+      <RefTableName>SUPPLIERS</RefTableName>
+      <RefKeyName>SQL191021190202580</RefKeyName>
+      <RefColNames>SUP_ID</RefColNames>
+    </foreign-key>
+    <column id="64" parent="20" name="RSS_NAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="20" name="RSS_FEED_XML">
+      <Position>2</Position>
+      <DataType>XML|2009s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="66" parent="20" name="SQL191021190202740">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSS_NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="20" name="SQL191021190202740">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSS_NAME</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="21" name="SUP_ID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="21" name="SUP_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(40)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="21" name="STREET">
+      <Position>3</Position>
+      <DataType>VARCHAR(40)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="21" name="CITY">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="21" name="STATE">
+      <Position>5</Position>
+      <DataType>CHAR(2)|1s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="21" name="ZIP">
+      <Position>6</Position>
+      <DataType>CHAR(5)|1s</DataType>
+    </column>
+    <index id="74" parent="21" name="SQL191021190202580">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="75" parent="21" name="SQL191021190202580">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SUP_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
