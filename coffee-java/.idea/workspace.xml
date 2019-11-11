@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cdb433b-683b-4f04-a636-36623ebe0efc" name="Default Changelist" comment="" />
+    <list default="true" id="3cdb433b-683b-4f04-a636-36623ebe0efc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab_PP_JavaFX/Lab_PP_JavaFX.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cie/coffee/CoffeeTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cie/coffee/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0d767d53-ce00-4e10-a825-e88b0c90f524.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626ea919-e2be-4e59-b307-b9e3f6b7853a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/626ea919-e2be-4e59-b307-b9e3f6b7853a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cie/coffee/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cie/coffee/Coffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cie/coffee/CoffeeDa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cie/coffee/CoffeeDa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/Coffee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/Coffee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/CoffeeDa$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/CoffeeDa$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/CoffeeDa$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/CoffeeDa$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/CoffeeDa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/poznan/put/cie/coffee/CoffeeDa.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +60,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -57,7 +78,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Snt1sziNJ7rZr3pFAuz9rdLEM1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -91,6 +114,8 @@
   </component>
   <component name="RunManager">
     <configuration name="CoffeeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="pl.poznan.put.cie.coffee.CoffeeMain" />
       <module name="coffee" />
       <extension name="coverage">
@@ -103,11 +128,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CoffeeMain" />
-      </list>
-    </recent_temporary>
+    <configuration name="CoffeeTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.poznan.put.cie.coffee.CoffeeTable" />
+      <module name="coffee" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.poznan.put.cie.coffee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -116,12 +149,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a4fc210e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f5a8f846" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a4fc210e" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@b68efdc" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f5a8f846" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@31e0bbee" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -141,11 +174,31 @@
       <updated>1572210976118</updated>
       <workItem from="1572210979487" duration="37000" />
       <workItem from="1572211031811" duration="558000" />
-      <workItem from="1572212435114" duration="5991000" />
+      <workItem from="1572212435114" duration="6182000" />
+      <workItem from="1572795688548" duration="1370000" />
+      <workItem from="1572902331150" duration="200000" />
+      <workItem from="1572902730331" duration="70000" />
+      <workItem from="1572902830387" duration="828000" />
+      <workItem from="1572969978411" duration="34000" />
+      <workItem from="1572974239538" duration="539000" />
+      <workItem from="1573154696082" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

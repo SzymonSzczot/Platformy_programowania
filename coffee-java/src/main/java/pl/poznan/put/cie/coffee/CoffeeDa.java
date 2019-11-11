@@ -40,8 +40,8 @@ public class CoffeeDa {
             public Coffee extractData(ResultSet rs) throws SQLException, DataAccessException {
                 Coffee c = new Coffee();
                 c.setName(name);
-                c.setSupplierId(rs.getInt("sup_id"));
-                c.setPrice(rs.getBigDecimal("price"));
+                c.setSupplierId(rs.getString("sup_id"));
+                c.setPrice(rs.getString("price"));
                 c.setSales(rs.getInt("sales"));
                 c.setTotal(rs.getInt("total"));
                 return c;
@@ -62,8 +62,8 @@ public class CoffeeDa {
                         public Coffee mapRow(ResultSet rs, int rownumber) throws SQLException {
                             Coffee c = new Coffee();
                             c.setName(rs.getString(1));
-                            c.setSupplierId(rs.getInt("sup_id"));
-                            c.setPrice(rs.getBigDecimal("price"));
+                            c.setSupplierId(rs.getString("sup_id"));
+                            c.setPrice(rs.getString("price"));
                             c.setSales(rs.getInt("sales"));
                             c.setTotal(rs.getInt("total"));
                             return c;
